@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                           from bdb import effective
+from bdb import effective
 from math import e
 import cv2
 import numpy as np
