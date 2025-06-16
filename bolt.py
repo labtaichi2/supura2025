@@ -655,6 +655,9 @@ def main():
             #painted_ratio_barの赤、青の比
             if(item_time - bg.while_time >bg.appear_time):#if flag1 != 1 and flag2 != 1:
                 new_frame2[bg.ry:bg.ry+bg.image.shape[0],bg.rx:bg.rx+bg.image.shape[1] ] = bg.image
+
+            if bg.rx <red.cx < (bg.rx + 50) and bg.ry < red.cy < (bg.ry + 50) :
+                new_frame2[bg.ry:bg.ry+bg.image.shape[0],bg.rx:bg.rx+bg.image.shape[1] ] = cv2.imread("Reverse.jpg")
             
             if(item_time - bm.while_time >bm.appear_time):
                 new_frame2[bm.ry:bm.ry+bm.image.shape[0],bm.rx:bm.rx+bm.image.shape[1] ] = bm.image
